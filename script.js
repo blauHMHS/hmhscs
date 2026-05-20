@@ -77,7 +77,7 @@ function draw() {
     ctx.font = `bold ${fontSize}px monospace`;
 
     specialWords.forEach(word => {
-        ctx.fillStyle = '#FF3333'; // Vibrant, solid Matrix Red
+        ctx.fillStyle = '#FF3333'; // Vibrant, solid Matrix Red without any bleeding shadows
         
         // Draw the word vertically, letter by letter
         for (let j = 0; j < word.text.length; j++) {
@@ -106,7 +106,7 @@ canvas.addEventListener('click', (event) => {
             mouseY >= topOfWord && mouseY <= bottomOfWord) {
             
             // Redirects to club.html in the same directory and opens in the same tab
-            window.open("./club.html", "_self");
+            window.open("club.html", "_self"); 
         }
     });
 });
