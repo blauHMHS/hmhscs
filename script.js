@@ -113,7 +113,7 @@ canvas.addEventListener('click', (event) => {
         if (mouseX >= leftOfWord && mouseX <= rightOfWord &&
             mouseY >= topOfWord && mouseY <= bottomOfWord) {
             
-            window.open("club.html", "_self"); 
+            window.open("home.html", "_self"); 
         }
     });
 });
